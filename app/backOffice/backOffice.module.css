@@ -1,0 +1,292 @@
+.userContainer {
+  padding: 20px 40px;
+  font-family: "Inter", sans-serif;
+  background: #fff; 
+}
+
+.userTitle {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #000000;
+}
+
+.userBox {
+  background: white;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.filterRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.inputBox {
+  min-width: 500px;
+  height: 35px;
+  padding: 8px 12px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #535353;
+  padding-left: 10px;
+  font-size: 14px;
+}
+
+.dropdown {
+  height: 35px;
+  padding: 0 12px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.dropdownStatusSelect {
+  width: 120px;
+  flex: none;
+  position: relative;
+  appearance: none;
+  background: rgb(255, 255, 255) url("data:image/svg+xml;utf8,\
+    <svg xmlns='http://www.w3.org/2000/svg' width='14' height='8' viewBox='0 0 12 6' fill='none'>\
+      <path d='M2 1.5L6 4.5L10 1.5' stroke='%23999' stroke-width='1.4' stroke-linecap='round' stroke-linejoin='round'/>\
+    </svg>") no-repeat;
+  background-position: right 10px center;
+  background-size: 14px 8px;
+  padding-right: 30px;
+  border: 1px solid #dcdcdc;
+  border-radius: 6px;
+  height: 35px;
+  font-size: 14px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  border: none;
+}
+
+.btnSearch {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border: 1px solid #1D3557;
+  font-size: 13px;
+  display: inline-flex;
+  align-items: center;
+  height: 40px;
+}
+
+.btnSearch:hover {
+  background-color: rgb(40, 40, 40);
+  border-color: #08317c;
+}
+
+.btnReset {
+  background-color: #a3d7ff;
+  color: #1D3557;
+  border: none;
+  font-size: 13px;
+}
+
+.btnReset:hover {
+  background-color: #bfe3ff;
+  border-color: #08317c;
+}
+
+.settingWrapper {
+  position: relative;
+}
+
+.settingBtn {
+  background-color: #000000;
+  color: white;
+  font-size: 13px;
+  border: 1px solid #000000;
+  border-radius: 13px;
+  padding: 10px 20px;
+  cursor: pointer;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.settingMenu {
+  position: absolute;
+  right: 0;
+  top: 38px;
+  width: 130px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  z-index: 20;
+}
+
+.settingMenu div {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.settingMenu div:hover {
+  background: #f2f2f2;
+}
+
+.popupOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.35);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0 }
+  to { opacity: 1 }
+}
+
+.popupBox {
+  background: #fff;
+  width: 400px;
+  max-width: 90%;
+  border-radius: 12px;
+  padding: 25px 30px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.popupHeader {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1d1d1d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popupClose {
+  cursor: pointer;
+  font-size: 20px;
+  color: #999;
+}
+
+.popupClose:hover {
+  color: #333;
+}
+
+.uploadArea {
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.uploadArea:hover {
+  border-color: #3f83f8;
+  color: #3f83f8;
+}
+
+.popupSubmit {
+  background-color: #a3d7ff;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 8px;
+  padding: 10px 0;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.popupSubmit:hover {
+  background-color: #88cafc;
+}
+
+.tableBox {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.userTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.userTable th {
+  background-color: #f0f0f0;
+  color: #000000;
+  font-weight: 600;
+  text-align: left;
+  padding: 12px 14px;
+  border-bottom: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.userTable td {
+  padding: 12px 14px;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+  color: #000000;
+}
+
+.userTable tr:hover {
+  background: #f5f5f5;
+}
+
+.actionIcon {
+  cursor: pointer;
+  color: #000000;
+  font-size: 17px;
+}
+
+.tableEmpty {
+  text-align: center;
+  padding: 40px 0;
+  color: #999;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  font-size: 14px;
+}
+
+.pageButtons span {
+  padding: 0 6px;
+  cursor: pointer;
+}
+
+.sortIcon {
+  margin-left: 6px;
+  font-size: 13px;
+  opacity: 0.6;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+
+}

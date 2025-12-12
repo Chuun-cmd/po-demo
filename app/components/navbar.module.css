@@ -1,0 +1,104 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 32px;
+  background-color: #000;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.45);
+}
+
+.navLeft {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+
+
+.navTitle {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.navLink {
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-size: 15px;
+  text-decoration: none;
+  color: #fff;
+  transition: background-color 0.2s ease;
+}
+
+.navLinkActive {
+  background: rgba(255, 255, 255, 0.22);
+}
+
+.dropdownButton {
+  background: none;
+  border: none;
+  color: #fff;
+  padding: 6px 12px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.dropdownButton:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.dropdownWrapper {
+  position: relative;
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 38px;
+  left: 0;
+  width: 190px;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35);
+}
+
+.dropdownLink {
+  display: block;
+  padding: 10px 14px;
+  color: #111;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.dropdownLink:hover {
+  background: #efefef;
+}
+
+.navRight {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logoutButton {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
